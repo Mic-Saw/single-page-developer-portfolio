@@ -1,0 +1,112 @@
+@use "../abstracts/variables" as var;
+
+#name,
+#email,
+#message {
+  width: 100%;
+  height: 4.3rem;
+  padding-left: 2.4rem;
+  border: none;
+  border-bottom: 1px solid var.$color-grey;
+  outline: none;
+  background-color: var.$color-dark-grey;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.22px;
+  color: white;
+}
+
+// Validation
+#email:focus:invalid,
+#name:focus:invalid {
+  border-bottom: 1px solid #ff6f5b;
+}
+#email:focus:invalid + .invalid-email,
+#name:focus:invalid + .invalid-name {
+  opacity: 1;
+}
+
+#email:focus:invalid + .invalid-email + .exclamation,
+#name:focus:invalid + .invalid-name + .exclamation {
+  opacity: 1;
+}
+
+#email:valid,
+#name:valid {
+  border-bottom: 1px solid var.$color-green;
+}
+
+#email:valid + .invalid-email,
+#name:valid +,
+.invalid-name {
+  opacity: 0;
+}
+
+#email:valid + .invalid-email + .exclamation,
+#name:valid + .invalid-name + .exclamation {
+  opacity: 0;
+}
+
+#message {
+  height: 10.7rem;
+  margin-bottom: 3.2rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#button {
+  width: 14.4rem;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.4rem;
+  letter-spacing: 2.2px;
+}
+
+.invalid-name,
+.invalid-email {
+  margin-top: 0.5rem;
+  background-color: var.$color-dark-grey;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: right;
+  color: #ff6f5b;
+}
+
+.exclamation {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #ff6f5b;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.exclamation-name {
+  top: 0 !important;
+
+  @media (max-width: 1110px) {
+    top: 22.5rem !important;
+  }
+
+  @media (max-width: 414px) {
+    top: 19rem !important;
+  }
+}
+
+.exclamation-email {
+  top: 6rem !important;
+
+  @media (max-width: 1110px) {
+    top: 28.5rem !important;
+  }
+
+  @media (max-width: 414px) {
+    top: 25rem !important;
+  }
+}
+
+.invalid-name,
+.invalid-email {
+  opacity: 0;
+}

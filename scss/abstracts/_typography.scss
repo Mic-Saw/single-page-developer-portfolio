@@ -1,0 +1,167 @@
+@use "../abstracts/variables" as var;
+
+@font-face {
+  font-family: "Space Grotesk Bold";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Medium";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Medium");
+}
+
+//////////////////////
+//header
+.heading {
+  font-family: "Space Grotesk Bold", sans-serif;
+  font-size: 8.8rem;
+  line-height: 8.8rem;
+  letter-spacing: -0.25rem;
+  color: var.$color-white;
+
+  @media (max-width: 1110px) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.15rem;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1.14px;
+    text-align: center;
+  }
+}
+
+// spans
+.next-line {
+  display: block;
+
+  @media (max-width: 1110px) {
+    display: inline;
+  }
+
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+
+.next-line-m {
+  @media (max-width: 1110px) {
+    display: block;
+  }
+
+  @media (max-width: 414px) {
+    display: inline;
+  }
+}
+
+.full-name {
+  display: inline-block;
+  border-bottom: 0.6rem solid var.$color-green;
+}
+
+// paragraph
+.paragraph {
+  font-family: "Space Grotesk Medium", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var.$color-white;
+
+  @media (max-width: 414px) {
+    width: 26rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -1.14px;
+    text-align: center;
+  }
+}
+
+// Section-1 Ability
+.ability-header {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+  letter-spacing: -1.5px;
+  color: var.$color-white;
+
+  @media (max-width: 414px) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+}
+
+.ability-paragraph {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: var.$color-white;
+
+  @media (max-width: 414px) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+  }
+}
+
+// Section-2 Projects
+.project-description {
+  margin-bottom: 1.4rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: white;
+}
+
+.project-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: white;
+
+  li {
+    margin-right: 1.8rem;
+  }
+}
+
+// Section-3 Contact
+.contact-description-h {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 8.8rem;
+  letter-spacing: -2.5px;
+  color: white;
+
+  @media (max-width: 1110px) {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    letter-spacing: -2.05px;
+    text-align: center;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1.14px;
+  }
+}
+
+.contact-description-p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: white;
+
+  @media (max-width: 1110px) {
+    text-align: center;
+  }
+}

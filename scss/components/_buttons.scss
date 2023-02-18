@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as var;
+
+.button {
+  width: 13rem;
+  height: 3.8rem;
+  border: none;
+  border-bottom: 2px solid var.$color-green;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var.$color-white;
+  transition: 0.3s;
+
+  @media (max-width: 414px) {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    color: var.$color-green;
+    cursor: pointer;
+  }
+}

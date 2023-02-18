@@ -1,0 +1,66 @@
+.picture {
+  width: 44.5rem;
+  height: 72rem;
+  position: absolute;
+  right: 15%;
+  background-image: url("./assets/images/image-profile-desktop.webp");
+  background-size: cover;
+
+  @media (max-width: 1110px) {
+    width: 32.2rem;
+    height: 60rem;
+    right: 0;
+    background-image: url("./assets/images/image-profile-tablet.webp");
+  }
+
+  @media (max-width: 414px) {
+    width: 17.4rem;
+    height: 38.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("./assets/images/image-profile-mobile.webp");
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 52.1rem;
+  right: calc(15% + 44.5rem - 6.4rem);
+
+  @media (max-width: 1110px) {
+    top: 47.1rem;
+    right: -5rem;
+  }
+
+  @media (max-width: 414px) {
+    top: 25.4rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70.6rem;
+  height: 40.7rem;
+  position: absolute;
+  top: 19.8rem;
+  left: 8%;
+
+  @media (max-width: 1110px) {
+    width: 40.5rem;
+    heigth: 30.9rem;
+    top: 15.1rem;
+  }
+
+  @media (max-width: 414px) {
+    align-items: center;
+    width: 34.3rem;
+    height: 24.4rem;
+    top: 42.3rem;
+  }
+
+  &__information {
+    width: 36rem;
+  }
+}
